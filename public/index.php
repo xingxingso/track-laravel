@@ -1,4 +1,4 @@
-<?php  
+<?php 
 
 // Define the framework paths.
 define('APP_PATH', realpath('../application').'/');
@@ -7,6 +7,9 @@ define('BASE_PATH', realpath('../').'/');
 
 // Define the PHP file extension.
 define('EXT', '.php');
+
+// Load the configuration and string classes.
+require SYS_PATH.'config'.EXT;
 
 // Register the auto-loader
 spl_autoload_register(require SYS_PATH.'loader'.EXT);

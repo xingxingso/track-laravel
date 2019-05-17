@@ -37,6 +37,7 @@ class Route
 
         // If the route just has a callback, call it.
         if (is_callable($this->route)) {
+            // var_dump('from there');
             $response = call_user_func_array($this->route, $this->parameters);
         }
         
